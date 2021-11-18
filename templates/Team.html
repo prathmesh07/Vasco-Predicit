@@ -1,0 +1,237 @@
+<html>
+	<head>
+	<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+		<title>Vasco Predicit</title>
+
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+		<style>
+			/* CSS code for button */
+		   
+		
+			* {
+			  box-sizing: border-box;
+			}
+			
+			body {
+			  margin: 0;
+			  font-size: 17px;
+			}
+			
+			#myVideo {
+			  object-fit: cover;
+			  width: 100vw;
+			  height: 100vh;
+			  position: fixed;
+			  top: 0;
+			  left: 0;
+			}
+			
+			.content {
+			  position: fixed;
+			  color: #f1f1f1;
+			  width: 100%;
+			  padding: 20px;
+			}
+		
+			/* CSS code for button */
+			.button_css {
+			color: #494949 !important;
+			text-transform: uppercase;
+			text-decoration: none;
+			background: #ffffff;
+			padding: 20px;
+			border: 4px solid #494949 !important;
+			display: inline-block;
+			transition: all 0.4s ease 0s;
+			}
+			
+			.button_css:hover {
+			color: #ffffff !important;
+			background: #f6b93b;
+			border-color: #f6b93b !important;
+			transition: all 0.4s ease 0s;
+			}
+		  </style>
+	</head>
+	<body>
+	<!-- Java Script -->	
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+		<video autoplay muted loop id="myVideo">
+			<source src="./static/images/videoo.mp4" type="video/mp4">
+		  </video>
+		
+		<!-- Navbar-->
+		<nav class="navbar navbar-expand-lg navbar-dark "> 
+			<div class="container-fluid">
+			  <a class="navbar-brand" href="/home">VascoPredict</a>
+			  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			  </button>
+			  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+				  <li class="nav-item">
+					<a class="nav-link active" aria-current="page" href="/home">Home</a>
+				  </li>
+				  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					<li class="nav-item">
+					  <a class="nav-link active" aria-current="page" href="/Info">Info</a>
+					</li>
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					  <li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="/team">Team</a>
+					  </li>
+				</ul>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					<li class="nav-item">
+					  <a class="nav-link active" aria-current="page" href="/contact">Contact</a>
+					</li>
+			  </ul>
+			  </div>
+			  <form class="d-flex">
+				<h4 style="color:white;" >Welcome {{name}} !</h4>
+				&nbsp&nbsp
+				<a class="btn btn-success" href="/signout" role="button">Sign Out</a>
+			  </form>
+			</div>
+		  </nav>
+		<div class="container">
+          
+
+            <div class="container">
+                <div class="row">
+                  <div class="col-sm">
+                    
+                    <div data-aos="flip-down"  class="card bg-success text-white" style="width: 18rem;">
+                        
+                        <div  class="card-body">
+                            <h5 class="card-title">Prathmesh Asole</h5>
+                            <p class="card-text">Department : Information Technology</p>
+                            <p class="card-text">College : G.H.Raisoni College of Engineering</p>
+                            <p class="card-text">Contribution : Full Stack Development</p>
+                            <a href="https://www.linkedin.com/in/prathmesh-asole-749961189/" target="_blank" class="btn btn-dark">LinkedIn</a>
+                          </div>
+          
+                          
+                        
+                    </div>
+                    
+                  </div>
+                  <div class="col-sm">
+                    <div data-aos="flip-down"  class="card bg-success text-white" style="width: 18rem;">
+               
+                        <div class="card-body" >
+                            <h5 class="card-title">Mihir Gaikwad</h5>
+                            <p class="card-text">Department : Information Technology</p>
+                            <p class="card-text">College : G.H.Raisoni College of Engineering</p>
+                            <p class="card-text">Contribution : Machine Learning Model Development</p>
+                            <a href="https://www.linkedin.com/in/mihir-gaikwad-568962189/" target="_blank" class="btn btn-dark">LinkedIn</a>
+                          </div>
+          
+                          
+                        
+                    </div>
+                  </div>
+                 
+                  </div>
+                </div>
+<br>
+
+                <div class="row">
+                    <div class="col-sm">
+                        <div data-aos="flip-down"  class="card bg-success text-white" style="width: 18rem;">
+                 
+                          <div class="card-body">
+                              <h5 class="card-title">Siddhart Ganvir</h5>
+                              <p class="card-text">Department : Information Technology</p>
+                              <p class="card-text">College : G.H.Raisoni College of Engineering</p>
+                              <p class="card-text">Contribution : Frontend Development</p>
+                              <a href="https://www.linkedin.com/in/siddharth-ganvir-bb636517a/" target="_blank" class="btn btn-dark">LinkedIn</a>
+                            </div>
+            
+                            
+                          
+                      </div>
+                      
+                    </div>
+                    <div class="col-sm">
+                      <div data-aos="flip-down"  class="card bg-success text-white" style="width: 18rem;">
+                 
+                          <div class="card-body  ">
+                              <h5 class="card-title">Kshitij Wakekar</h5>
+                              <p class="card-text">Department : Information Technology</p>
+                              <p class="card-text">College : G.H.Raisoni College of Engineering</p>
+                              <p class="card-text">Contribution : Data Processing</p>
+                              <a href="https://www.linkedin.com/in/kshitij-wakekar-06795a177/" target="_blank" class="btn btn-dark">LinkedIn</a>
+                            </div>
+            
+                            
+                          
+                      </div>
+                    </div>
+                   
+                  </div>
+  
+
+
+
+<br>
+                <div class="row">
+                    <div class="col-sm">
+                        <div data-aos="flip-down"  class="card bg-success text-white" style="width: 18rem;">
+                 
+                        <div class="card-body">
+                            <h5 class="card-title">Simran Singh</h5>
+                            <p class="card-text">Department : Information Technology</p>
+                            <p class="card-text">College : G.H.Raisoni College of Engineering</p>
+                            <p class="card-text">Contribution : Literature Survey</p>
+                            <a href="#" class="btn btn-dark">LinkedIn</a>
+                          </div>
+            
+                            
+                          
+                      </div>
+                      
+                    </div>
+                    <div class="col-sm">
+                        <div data-aos="flip-down"  class="card bg-warning text-white" style="width: 18rem;">
+                 
+                        <div class="card-body">
+                            <h5 class="card-title">Prof. Leela Bitla</h5>
+                            <p class="card-text">Department : Information Technology</p>
+                            <p class="card-text">College : G.H.Raisoni College of Engineering</p>
+                            <p class="card-text">Contribution : Project Guide</p>
+                            <a href="#" class="btn btn-dark">LinkedIn</a>
+                          </div>
+            
+                            
+                          
+                      </div>
+                    </div>
+                    
+                    </div>
+                  </div>
+
+              </div>
+
+        
+
+        </div>
+			<br>
+			
+
+            <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+            <script>
+              AOS.init();
+            </script>
+		
+	</body>
+</html>
+
