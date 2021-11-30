@@ -244,8 +244,12 @@
 					</div>
 
 					<!--Prediction Result-->
-					<div id="result">
-						<strong style="color:red">{{result}}</strong>
+						<div id="result" style="background-color: #f0f3fc;">
+						{% if (result=='The patient is not likely to have heart disease!')%}
+						<h2 style="color:green"><b>{{result}}</b></h2>
+						{% else %}
+						<h2 style="color:red">{{result}}</h2>
+						{% endif %}
 					</div>
 				</div>
 			</fieldset>
